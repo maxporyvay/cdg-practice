@@ -1,3 +1,4 @@
+print "Enter word>"
 word = gets.chomp
 if word.length > 1
     ending = word[-2..].downcase

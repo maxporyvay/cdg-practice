@@ -1,17 +1,18 @@
-def getdata()
-    pokemonhash = {}
+def get_data
+    pokemon_hash = {}
     print "Enter pokemon's name>"
-    pokemonhash[:name] = gets.chomp 
+    pokemon_hash[:name] = gets.chomp 
     print "Enter pokemon's color>"
-    pokemonhash[:color] = gets.chomp
-    pokemonhash
+    pokemon_hash[:color] = gets.chomp
+    pokemon_hash
 end
 
+print "Enter pokemons number>"
 num = gets.chomp.to_i
-pokemonlist = []
+pokemon_list = []
 num.times do
-    pokemonhash = getdata
-    pokemonlist.append(pokemonhash)
+    pokemon_hash = get_data
+    pokemon_list.append(pokemon_hash)
 end
 
-p pokemonlist
+p pokemon_list
