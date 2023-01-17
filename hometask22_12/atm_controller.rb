@@ -17,7 +17,7 @@ class AtmController
   def self.init(balance_file)
     default_start_balance = 100.0
 
-    balance = find(balance_file, 0).to_f ? File.exist?(balance_file) : default_start_balance
+    balance = File.exist?(balance_file) ? find(balance_file, 0).to_f : default_start_balance
 
     AtmController.new(balance, balance_file)
   end
